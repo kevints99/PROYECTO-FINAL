@@ -8,45 +8,48 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="bg-primary text-white text-center py-4">
-        <h1>Contacto</h1>
-    </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Inicio</a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Kevin Tapia Suarez</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">Sobre Mí</a></li>
                     <li class="nav-item"><a class="nav-link" href="portfolio.html">Portafolio</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
                 </ul>
             </div>
-        </div>
-    </nav>
-    <main class="container py-5">
-        <h2 class="text-center">Envíame un mensaje</h2>
-        <form id="contactForm" class="needs-validation" novalidate>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <h1>Contacto</h1>
+        
+        <p>Si deseas ponerte en contacto conmigo, por favor llena el siguiente formulario:</p>
+
+        <form action="#" method="post">
             <div class="mb-3">
                 <label for="name" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="name" name="name" required>
-                <div class="invalid-feedback">Por favor, escribe tu nombre.</div>
+                <input type="text" class="form-control" id="name" required>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-                <div class="invalid-feedback">Por favor, escribe un correo válido.</div>
+                <input type="email" class="form-control" id="email" required>
             </div>
             <div class="mb-3">
                 <label for="message" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                <div class="invalid-feedback">Por favor, escribe un mensaje.</div>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
     </main>
-    <footer class="text-center bg-dark text-light py-3">
-        <p>&copy; 2024 Kevin Tapia Suarez | <a href="#top" class="text-light">Volver al inicio</a></p>
+
+    <footer>
+        <div class="container">
+            <p>Kevin Tapia Suarez | <a href="#top">Volver al inicio</a></p>
+        </div>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>

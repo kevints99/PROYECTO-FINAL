@@ -1,12 +1,5 @@
-// Validación del formulario
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("contactForm");
-
-    form.addEventListener("submit", function (event) {
-        if (!form.checkValidity()) {
-            event.preventDefault();
-            event.stopPropagation();
-        }
-        form.classList.add("was-validated");
-    });
+// Función para el formulario de contacto (Ejemplo)
+document.querySelector('form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    alert('Formulario enviado!');
 });
